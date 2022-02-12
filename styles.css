@@ -24,6 +24,10 @@ body {
   display: none;
 }
 
+.arrow-up-icon {
+  color: red;
+}
+
 .header {
   padding: 30px 120px;
 }
