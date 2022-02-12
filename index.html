@@ -16,24 +16,25 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://kit.fontawesome.com/a70cf7601d.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/8e451d2cb2.js" crossorigin="anonymous"></script>
     <title>Beflex Website</title>
   </head>
 
   <body>
+    <!-- scrollup button -->
+    <div class="scrollup">
+      <img src="./assets/icons/circle-arrow-up-solid.svg" alt="">
+    </div>
     <!-- navbar section -->
     <section class="header">
       <nav class="navbar">
         <a href="#"><img class="logo" src="./assets/image1.jpg" alt="" /></a>
         <ul class="nav-link">
-          <li><a href="">home</a></li>
-          <li><a href="">about</a></li>
-          <li><a href="">service</a></li>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#service">service</a></li>
           <li><a href="">shop</a></li>
-          <li><a href="">book an appoint</a></li>
+          <li><a href="#contact">book an appoint</a></li>
         </ul>
         <img class="toogle-bar" src="./assets/icons/bars-solid.svg" alt="" />
       </nav>
@@ -58,7 +59,7 @@
       </div>
     </div>
     <!-- who we are section -->
-    <div class="container-fluid who-we-are">
+    <div class="container-fluid who-we-are" id="about">
       <div class="row">
         <div class="col-md-6">
           <h3>who we are</h3>
@@ -92,7 +93,7 @@
     </div>
 
     <!-- services section -->
-    <div class="container-fluid services-container">
+    <div class="container-fluid services-container" id="service">
       <div class="section-title">
         <h3>Services</h3>
         <h2>
@@ -100,65 +101,61 @@
           priorities
         </h2>
       </div>
-      <div class="row services">
-        <div class="col-md-4 service-item">
-          <div class="border-line">
-            <div class="">
-              <div class="service-img">
-                <a href="#"><img src="./assets/services3.jpg" alt="" /></a>
-              </div>
-              <div class="service-desc">
-                <h3>Business</h3>
-                <p>
-                  Because they build a relationship that’s based on trust. Over
-                  the years they’ve proven that their delivery is fast and
-                  stable.
-                </p>
-              </div>
-              <div class="">
-                <button class="service-btn" type="button">Learn More</button>
-              </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assets/services3.jpg" alt="" />
+            <div class="card-body">
+              <h3>Business</h3>
+              <p class="card-text">
+                Because they build a relationship that’s based on trust. Over
+                the years they’ve proven that their delivery is fast and
+                stable.
+              </p>
+              <button class="service-btn" type="button">Learn More</button>
             </div>
           </div>
         </div>
-        <div class="col-md-4 service-item middle">
-          <div class="border-line">
-            <div class="">
-              <div class="service-img">
-                <a href="#"><img src="./assets/services3.jpg" alt="" /></a>
-              </div>
-              <div class="service-desc">
-                <h3>Business</h3>
-                <p>
-                  Because they build a relationship that’s based on trust. Over
-                  the years they’ve proven that their delivery is fast and
-                  stable.
-                </p>
-              </div>
-              <div class="">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assets/services3.jpg" alt="" />
+            <div class="card-body">
+              <h3>Business</h3>
+              <p class="card-text"> Because they build a relationship that’s based on trust. Over
+                the years they’ve proven that their delivery is fast and
+                stable.</p>
                 <button class="service-btn" type="button">Learn More</button>
-              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4 service-item">
-          <div class="border-line">
-            <div class="">
-              <div class="service-img">
-                <a href="#"><img src="./assets/services3.jpg" alt="" /></a>
-              </div>
-              <div class="service-desc">
-                <h3>Business</h3>
-                <p>
-                  Because they build a relationship that’s based on trust. Over
-                  the years they’ve proven that their delivery is fast and
-                  stable.
-                </p>
-              </div>
-              <div class="">
-                <button class="service-btn" type="button">Learn More</button>
-              </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assets/services3.jpg" alt="" />
+            <div class="card-body">
+              <h3>Business</h3>
+              <p class="card-text">
+                Because they build a relationship that’s based on trust. Over
+                the years they’ve proven that their delivery is fast and
+                stable.
+              </p>
+              <button class="service-btn" type="button">Learn More</button>
+
             </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assets/services3.jpg" alt="" />
+            <div class="card-body">
+              <h3>Business</h3>
+              <p class="card-text">
+                Because they build a relationship that’s based on trust. Over
+                the years they’ve proven that their delivery is fast and
+                stable.
+              </p>
+                <button class="service-btn" type="button">Learn More</button>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -171,14 +168,14 @@
       </div>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 body">
             <img
               src="./assets/testomonial.jpg"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body">
-              <p class="card-text">
+              <p class="card-text text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Officiis quibusdam ipsam tenetur commodi. Quisquam quaerat error
                 nulla, tempora aliquam possimus impedit expedita saepe. Minus
@@ -188,14 +185,14 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 body">
             <img
               src="./assets/testomonial.jpg"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body">
-              <p class="card-text">
+              <p class="card-text text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Officiis quibusdam ipsam tenetur commodi. Quisquam quaerat error
                 nulla, tempora aliquam possimus impedit expedita saepe. Minus
@@ -205,14 +202,14 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 body">
             <img
               src="./assets/testomonial.jpg"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body">
-              <p class="card-text">
+              <p class="card-text text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Officiis quibusdam ipsam tenetur commodi. Quisquam quaerat error
                 nulla, tempora aliquam possimus impedit expedita saepe. Minus
@@ -224,7 +221,7 @@
       </div>
     </div>
     <!-- Form -->
-    <div class="container-fluid form-container">
+    <div class="container-fluid form-container" id="contact">
       <div class="form-title">
         <h3>CONTACT US</h3>
         <h2>Let us know how we can be of help to you</h2>
@@ -281,6 +278,59 @@
         </div>
       </div>
     </div>
+    <!-- Footer -->
+    <section class="footer-section">
+      <footer class="footer">
+        <p>
+          Launch your campaign and benefit from our expertise on designing and
+          managing conversion centered bootstrap4 html page.
+        </p>
+        <div class="social-icons">
+          <ul>
+            <li>
+              <a href=""
+                ><img
+                  src="./assets/icons/facebook-f-brands.svg"
+                  alt="facebook icon"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./assets/icons/instagram-brands.svg"
+                  alt="instagram icon"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./assets/icons/linkedin-brands.svg"
+                  alt="linkendin icon"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./assets/icons/twitter-brands.svg"
+                  alt="twitter icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <hr class="line" />
+        <div class="base-footer">
+          <h3>© 2022 Copyright. Design by Dennis Akagha</h3>
+          <div class="short-link">
+            <ul>
+              <li><a class="footer-item" href="">home</a></li>
+              <li><a class="footer-item" href="">about</a></li>
+              <li><a class="footer-item" href="">shop</a></li>
+              <li><a class="footer-item" href="">contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </section>
 
     <script src="./index.js"></script>
   </body>
