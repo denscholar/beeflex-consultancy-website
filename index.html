@@ -27,8 +27,23 @@
     </div>
     <!-- navbar section -->
     <section class="header">
-      <nav class="navbar">
-        <a href="#"><img class="logo" src="./assets/image1.jpg" alt="" /></a>
+      <!-- Desktop nav -->
+      <nav class="nav">
+          <a href="#"><img class="logo" src="./assets/image1.jpg" alt="" /></a>
+          <img class="toogle-bar" src="./assets/icons/bars-solid.svg" alt="" />
+        <ul class="menu-desktop">
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#service">service</a></li>
+          <li><a href="">shop</a></li>
+          <li><a href="#contact">book an appoint</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile nav -->
+      <nav class="navbar active">
+        <button type="button" class="btn-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
         <ul class="nav-link">
           <li><a href="#home">home</a></li>
           <li><a href="#about">about</a></li>
@@ -36,7 +51,6 @@
           <li><a href="">shop</a></li>
           <li><a href="#contact">book an appoint</a></li>
         </ul>
-        <img class="toogle-bar" src="./assets/icons/bars-solid.svg" alt="" />
       </nav>
     </section>
 
@@ -61,7 +75,7 @@
     <!-- who we are section -->
     <div class="container-fluid who-we-are" id="about">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 who-we-are-content">
           <h3>who we are</h3>
           <p class="heading-who-we-are">
             We increase our clients' topline by optimizing their growth
@@ -75,7 +89,7 @@
             />
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 about-us-content">
           <p class="about-us">
             Why we’ve been working with Objectivity since 2013? Because they
             build a relationship that’s based on trust. Over the years they’ve
@@ -320,14 +334,14 @@
         <hr class="line" />
         <div class="base-footer">
           <h3>© 2022 Copyright. Design by Dennis Akagha</h3>
-          <div class="short-link">
+          <!-- <div class="short-link">
             <ul>
               <li><a class="footer-item" href="">home</a></li>
               <li><a class="footer-item" href="">about</a></li>
               <li><a class="footer-item" href="">shop</a></li>
               <li><a class="footer-item" href="">contact</a></li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </footer>
     </section>
